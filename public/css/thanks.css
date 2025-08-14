@@ -1,0 +1,19 @@
+.thanks__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.thanks__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    background: #8B4513;
+    text-align: center;
+    margin: 100px auto 0;
+    display: block;
+}

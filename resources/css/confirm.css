@@ -1,0 +1,74 @@
+.confirm {
+    max-width: 720px;
+    margin: 40px auto 80px;
+    padding: 24px;
+    background: #f8f3ef;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.confirm__title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #614438;
+    font-family: serif;
+}
+
+.confirm__table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.confirm__table th,
+.confirm__table td {
+    border: 1px solid #eee;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.confirm__table th {
+    width: 160px;
+    background: #f6f1ee;
+    color: #614438;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.confirm__table td.pre {
+    white-space: pre-wrap;
+    line-height: 1.7;
+}
+
+.confirm__actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.btn {
+    min-width: 120px;
+    padding: 9px 16px;
+    border: 1px solid #8B4513;
+    border-radius: 4px;
+    background: #fff;
+    color: #8B4513;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn--primary {
+    background: #8B4513;
+    color: #fff;
+}
+
+.btn--ghost:hover,
+.btn--primary:hover {
+    opacity: .9;
+}

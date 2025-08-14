@@ -1,0 +1,95 @@
+.admin {
+    max-width: 1040px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.admin__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr 140px 200px 1fr 1fr auto auto auto;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.table th,
+.table td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.td-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px 14px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.btn--sm {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.btn--ghost {
+    background: #fff;
+}
+
+.btn--secondary {
+    background: #e7eafc;
+    border-color: #cbd5ff;
+}
+
+.btn--danger {
+    background: #ffe5e5;
+    border-color: #ffbcbc;
+}
+
+.pager-top,
+.pager-bottom {
+    margin: 12px 0;
+}
+
+dialog {
+    width: 640px;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, .35);
+}
+
+#detailBody {
+    padding: 16px 16px 8px;
+}
+
+dialog>button {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.table--vertical th {
+    width: 180px;
+    text-align: left;
+    background: #fafafa;
+}

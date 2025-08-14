@@ -1,0 +1,180 @@
+/* public/css/contact.css */
+
+/* ベース */
+:root {
+    --brown: #8B4513;
+    --brown-weak: #a86b3b;
+    --line: #eee;
+    --error: #d14;
+    --muted: #777;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    color: #333
+}
+
+.contact-page {
+    max-width: 980px;
+    margin: 32px auto 80px;
+    padding: 0 16px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: .06em;
+    margin: 4px 0 24px;
+}
+
+/* フォーム枠 */
+.form {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 24px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
+}
+
+/* ラベル & 必須マーク */
+.form-label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 600;
+}
+
+.form-label .req {
+    color: var(--error);
+    font-weight: 700;
+    margin-left: .35em;
+    font-size: .9em;
+}
+
+/* テキスト/セレクト/テキストエリア */
+.input,
+.select,
+.textarea {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 10px 12px;
+    background: #fafafa;
+    transition: border-color .15s, background .15s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: #ccc;
+}
+
+.textarea {
+    min-height: 180px;
+    resize: vertical
+}
+
+/* 2/3 カラム系（氏名・電話など） */
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+.row .col {
+    flex: 1
+}
+
+/* ラジオ（男女） */
+.radios {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.radios label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* エラーメッセージ */
+.error {
+    color: var(--error);
+    font-size: .88rem;
+    margin-top: 6px;
+}
+
+/* ヒント（プレースホルダ説明など使うとき） */
+.note {
+    color: var(--muted);
+    font-size: .85rem;
+    margin-top: 6px;
+}
+
+/* 送信ボタン */
+.actions {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 180px;
+    padding: 12px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--brown);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--brown-weak);
+}
+
+/* セレクトの▼（必要なら） */
+.select-wrap {
+    position: relative;
+}
+
+.select-wrap .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-wrap::after {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #999;
+    transform: translateY(-30%);
+    pointer-events: none;
+}
+
+/* レスポンシブ微調整 */
+@media (max-width: 640px) {
+    .row {
+        flex-direction: column
+    }
+
+    .btn {
+        min-width: 140px
+    }
+}
